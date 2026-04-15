@@ -9,10 +9,10 @@ namespace Borrador_T1
     internal class Nodo
     {
         //Encapsulamiento
-        public int Dato { get; set; }
+        public Producto Dato { get; set; }
         public Nodo Siguiente { get; set; }
 
-        public Nodo(int dato)
+        public Nodo(Producto dato)
         {
             Dato = dato;
             Siguiente = null;

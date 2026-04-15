@@ -8,25 +8,42 @@ namespace Borrador_T1
 {
     internal class Grupo8
     {
-        public int ContarVideojuegos(ListaVideojuegos lista)
+        Nodo cabeza= null;
+        public void ContarVideojuegos(ListaVideojuegos L)
         {
-            int conteo = 0;
-            return conteo;
+            Nodo actual = cabeza;
+            while (actual.Siguiente != null)
+            {
+                actual = actual.Siguiente;
+            }
         }
-        public void SonIguales(ListaVideojuegos lista1, ListaVideojuegos lista2)
+        public void SonIguales(ListaVideojuegos L1, ListaVideojuegos L2)
         {
             
         }
-        public static ListaVideojuegos ConcatenarListas(ListaVideojuegos lista1, ListaVideojuegos lista2)
+        public void ConcatenarListas(ListaVideojuegos L1, ListaVideojuegos L2)
         {
-            ListaVideojuegos nuevaLista =null;
-            return nuevaLista;
-        }
-        public static ListaVideojuegos InvertirLista(Nodo lista1, Nodo lista2)
-        {
-            ListaVideojuegos listaInvertida = null;
-            return listaInvertida;
-        }
 
+        }
+        public void InvertirLista(ListaVideojuegos L)
+        {
+
+        }
+        public void OrdenarPorPrecio(ListaVideojuegos L, string tipo)
+        {
+
+        }
+        public void FiltrarPorGenero(ListaVideojuegos L, string genero)
+        {
+
+        }
+        public void RestarCatalogos(ListaVideojuegos L1, ListaVideojuegos L2)
+        {
+
+        }
+        public void EstadisticaPrecio(ListaVideojuegos L)
+        {
+
+        }
     }
 }

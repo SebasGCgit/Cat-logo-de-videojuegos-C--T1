@@ -1,38 +1,123 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Borrador_T1
 {
     internal class ListaVideojuegos
     {
-        ListaVideojuegos lista = new ListaVideojuegos();
-        ListaVideojuegos lista1 = new ListaVideojuegos();
-        ListaVideojuegos lista2 = new ListaVideojuegos();
+        /*public ListaVideojuegos lista = new ListaVideojuegos();*/
 
-        public Nodo cabeza;
+        private Nodo cabeza;
 
-        public void AgregarAlInicio()
+        public ListaVideojuegos()
         {
-
+            cabeza = null;
         }
-        public void AgregarAlFinal(int dato)
+        public ListaVideojuegos(int cantidadVideojuegos)
         {
-            
+            cabeza = null;
+            if (cantidadVideojuegos >= 1) { AgregarAlFinal(new Producto("God of War Ragnarök", "Acción / Aventura", 2022, 36, 190.0)); }
+            if (cantidadVideojuegos >= 2) { AgregarAlFinal(new Producto("Red Dead Redemption 2", "Western / Acción", 2018, 57, 100.0)); }
+            if (cantidadVideojuegos >= 3) { AgregarAlFinal(new Producto("Super Mario Bros. Wonder", "Plataformas", 2023, 120, 185.0)); }
+            if (cantidadVideojuegos >= 4) { AgregarAlFinal(new Producto("The Legend of Zelda: TotK", "Aventura / Mundo Abierto", 2023, 50, 215.0)); }
+            if (cantidadVideojuegos >= 5) { AgregarAlFinal(new Producto("Cyberpunk 2077", "Acción / Sci-Fi", 2020, 101, 130.0)); }
+            if (cantidadVideojuegos >= 6) { AgregarAlFinal(new Producto("Street Fighter 6", "Lucha", 2023, 150, 160.0)); }
+            if (cantidadVideojuegos >= 7) { AgregarAlFinal(new Producto("Forza Horizon 5", "Carreras / Simulación", 2021, 20, 160.0)); }
+            if (cantidadVideojuegos >= 8) { AgregarAlFinal(new Producto("Helldivers 2", "Shooter Cooperativo", 2024, 10, 160.0)); }
+            if (cantidadVideojuegos >= 9) { AgregarAlFinal(new Producto("Hollow Knight", "Metroidvania / Indie", 2017, 190, 50.0)); }
+            if (cantidadVideojuegos >= 10) { AgregarAlFinal(new Producto("Silent Hill 2 (Remake)", "Survival Horror", 2024, 132, 250.0)); }
         }
-        public Nodo EliminarPorTitulo(int dato)
+        public void AgregarAlInicio(Producto dato)
         {
-            return cabeza;
+            Nodo nuevoNodo = new Nodo(dato);
+            if (EstaVacia())
+            {
+                cabeza = nuevoNodo;
+                return; // Termina
+            }
+            nuevoNodo.Siguiente = cabeza;
+            cabeza = nuevoNodo;
         }
-        public void Imprimir()
+        public void AgregarAlFinal(Producto dato)
         {
-            
+            Nodo nuevoNodo = new Nodo(dato);
+            if (EstaVacia())
+            {
+                cabeza = nuevoNodo;
+                return; // Termina
+            }
+            Nodo actual = cabeza;
+            while (actual.Siguiente != null)
+            {
+                actual = actual.Siguiente;
+            }
+            actual.Siguiente = nuevoNodo;
+        }
+        public void EliminarPorTitulo(string titulo)
+        {
+            //1º caso
+            if (EstaVacia())
+            {
+                MessageBox.Show("La lista está vacía.",
+                    "Proceso no completado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            //2º caso
+            if (cabeza.Dato.Titulo == titulo)
+            {
+                cabeza = cabeza.Siguiente;
+                return;
+            }
+            //3º caso
+            Nodo anterior = cabeza;
+            Nodo actual = cabeza.Siguiente;
+            while (actual != null)
+            {
+                if (actual.Dato.Titulo == titulo)
+                {
+                    anterior.Siguiente = actual.Siguiente;
+                    return;
+                }
+                anterior = actual;
+                actual = actual.Siguiente;
+            }
+            MessageBox.Show("Título no encontrado en la lista.",
+                    "Proceso no completado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+        //Recorre la lista y llena el DataGridView
+        public void Imprimir(DataGridView dgv)
+        {
+            dgv.Rows.Clear(); //Limpia filas del dgv
+            Nodo actual = cabeza;
+            while (actual != null)
+            {
+                dgv.Rows.Add(actual.Dato.Titulo,
+                             actual.Dato.Genero,
+                             actual.Dato.AñoDeLanzamiento,
+                             actual.Dato.Stock,
+                             actual.Dato.Precio);
+                actual = actual.Siguiente;
+            }
         }
         public bool EstaVacia()
         {
             return cabeza == null;
+        }
+        //Evita que se duplique el mismo titulo en la lista
+        public bool Duplicado(string titulo)
+        {
+            Nodo actual = cabeza;
+            while (actual != null)
+            {
+                if (actual.Dato.Titulo.ToLower() == titulo.ToLower()) return true; //valida si el titulo existe convirtiendo a minúscula todo el texto.
+                actual = actual.Siguiente;
+            }
+            return false;
         }
     }
 }
