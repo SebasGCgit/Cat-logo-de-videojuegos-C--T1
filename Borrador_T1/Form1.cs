@@ -14,7 +14,7 @@ namespace Borrador_T1
     {
         //Instancias de las dos listas enlazadas
         private ListaVideojuegos lista1 = new ListaVideojuegos();
-        private ListaVideojuegos lista2 = new ListaVideojuegos(10);
+        private ListaVideojuegos lista2 = new ListaVideojuegos();
 
         public Form1()
         {
@@ -86,6 +86,7 @@ namespace Borrador_T1
         }
         private void btnPredeterminados_Click(object sender, EventArgs e)
         {
+            lista2 = new ListaVideojuegos(10);
             lista2.Imprimir(dgvLista2);
         }
 
@@ -152,5 +153,30 @@ namespace Borrador_T1
             txtTitulo.Focus();
         }
 
+        private void btnContar_Click(object sender, EventArgs e)
+        {
+            switch(comboBox1.SelectedItem)
+            {
+                case "Lista 1":
+                    lblConteo.Text = $"Total de videojuegos: {Grupo8.ContarVideojuegos(lista1)}";
+                    break;
+                case "Lista 2":
+                    lblConteo.Text = $"Total de videojuegos: {Grupo8.ContarVideojuegos(lista2)}";
+                    break;
+            }
+        }
+        private void btnIgualdad_Click(object sender, EventArgs e)
+        {
+            bool igualdadListas = Grupo8.SonIguales(lista1,lista2);
+            switch(igualdadListas)
+            {
+                case false:
+                    lblIgualdad.Text = "Las listas no son iguales";
+                    break;
+                case true:
+                    lblIgualdad.Text = "Las listas son iguales";
+                    break;
+            }
+        }
     }
 }

@@ -10,9 +10,7 @@ namespace Borrador_T1
 {
     internal class ListaVideojuegos
     {
-        /*public ListaVideojuegos lista = new ListaVideojuegos();*/
-
-        private Nodo cabeza;
+        public Nodo cabeza;
 
         public ListaVideojuegos()
         {

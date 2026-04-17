@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPredeterminados = new System.Windows.Forms.Button();
             this.lblAviso = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnEliminar2 = new System.Windows.Forms.Button();
@@ -53,8 +54,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLista1 = new System.Windows.Forms.DataGridView();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Género = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvLista2 = new System.Windows.Forms.DataGridView();
+            this.DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -72,22 +88,6 @@
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnInvierte = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Género = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnPredeterminados = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -123,6 +123,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del producto";
+            // 
+            // btnPredeterminados
+            // 
+            this.btnPredeterminados.Location = new System.Drawing.Point(777, 95);
+            this.btnPredeterminados.Name = "btnPredeterminados";
+            this.btnPredeterminados.Size = new System.Drawing.Size(104, 28);
+            this.btnPredeterminados.TabIndex = 13;
+            this.btnPredeterminados.Text = "Datos de ejemplo";
+            this.btnPredeterminados.UseVisualStyleBackColor = true;
+            this.btnPredeterminados.Click += new System.EventHandler(this.btnPredeterminados_Click);
             // 
             // lblAviso
             // 
@@ -315,6 +325,38 @@
             this.dgvLista1.Size = new System.Drawing.Size(551, 199);
             this.dgvLista1.TabIndex = 1;
             // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Título";
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            // 
+            // Género
+            // 
+            this.Género.HeaderText = "Género";
+            this.Género.Name = "Género";
+            this.Género.ReadOnly = true;
+            // 
+            // Año
+            // 
+            this.Año.HeaderText = "Año de lanzamiento";
+            this.Año.Name = "Año";
+            this.Año.ReadOnly = true;
+            // 
+            // Stock
+            // 
+            this.Stock.HeaderText = "Stock";
+            this.Stock.Name = "Stock";
+            this.Stock.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            dataGridViewCellStyle1.Format = "F2";
+            this.Precio.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Precio.HeaderText = "Precio (S/)";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
             // dgvLista2
             // 
             this.dgvLista2.AllowUserToAddRows = false;
@@ -333,6 +375,38 @@
             this.dgvLista2.Size = new System.Drawing.Size(552, 199);
             this.dgvLista2.TabIndex = 2;
             // 
+            // DataGridViewTextBoxColumn1
+            // 
+            this.DataGridViewTextBoxColumn1.HeaderText = "Título";
+            this.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1";
+            this.DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn2
+            // 
+            this.DataGridViewTextBoxColumn2.HeaderText = "Género";
+            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
+            this.DataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn3
+            // 
+            this.DataGridViewTextBoxColumn3.HeaderText = "Año de lanzamiento";
+            this.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3";
+            this.DataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn4
+            // 
+            this.DataGridViewTextBoxColumn4.HeaderText = "Stock";
+            this.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4";
+            this.DataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle2.Format = "F2";
+            this.DataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridViewTextBoxColumn5.HeaderText = "Precio (S/)";
+            this.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5";
+            this.DataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -350,6 +424,38 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(545, 309);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // DataGridViewTextBoxColumn6
+            // 
+            this.DataGridViewTextBoxColumn6.HeaderText = "Título";
+            this.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6";
+            this.DataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn7
+            // 
+            this.DataGridViewTextBoxColumn7.HeaderText = "Género";
+            this.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7";
+            this.DataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn8
+            // 
+            this.DataGridViewTextBoxColumn8.HeaderText = "Año de lanzamiento";
+            this.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8";
+            this.DataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn9
+            // 
+            this.DataGridViewTextBoxColumn9.HeaderText = "Stock";
+            this.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9";
+            this.DataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn10
+            // 
+            dataGridViewCellStyle3.Format = "F2";
+            this.DataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridViewTextBoxColumn10.HeaderText = "Precio (S/)";
+            this.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10";
+            this.DataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // label6
             // 
@@ -404,6 +510,7 @@
             this.lblIgualdad.Name = "lblIgualdad";
             this.lblIgualdad.Size = new System.Drawing.Size(227, 40);
             this.lblIgualdad.TabIndex = 13;
+            this.lblIgualdad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConcatena
             // 
@@ -431,6 +538,7 @@
             this.btnIgualdad.TabIndex = 6;
             this.btnIgualdad.Text = "Verificar igualdad en listas";
             this.btnIgualdad.UseVisualStyleBackColor = true;
+            this.btnIgualdad.Click += new System.EventHandler(this.btnIgualdad_Click);
             // 
             // groupBox5
             // 
@@ -451,6 +559,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Lista 1",
+            "Lista 2"});
             this.comboBox1.Location = new System.Drawing.Point(7, 27);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -464,6 +575,7 @@
             this.btnContar.TabIndex = 5;
             this.btnContar.Text = "Contar videojuegos";
             this.btnContar.UseVisualStyleBackColor = true;
+            this.btnContar.Click += new System.EventHandler(this.btnContar_Click);
             // 
             // lblConteo
             // 
@@ -473,6 +585,7 @@
             this.lblConteo.Name = "lblConteo";
             this.lblConteo.Size = new System.Drawing.Size(230, 40);
             this.lblConteo.TabIndex = 4;
+            this.lblConteo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEstadistica
             // 
@@ -517,112 +630,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(250, 200);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // Titulo
-            // 
-            this.Titulo.HeaderText = "Título";
-            this.Titulo.Name = "Titulo";
-            this.Titulo.ReadOnly = true;
-            // 
-            // Género
-            // 
-            this.Género.HeaderText = "Género";
-            this.Género.Name = "Género";
-            this.Género.ReadOnly = true;
-            // 
-            // Año
-            // 
-            this.Año.HeaderText = "Año de lanzamiento";
-            this.Año.Name = "Año";
-            this.Año.ReadOnly = true;
-            // 
-            // Stock
-            // 
-            this.Stock.HeaderText = "Stock";
-            this.Stock.Name = "Stock";
-            this.Stock.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            dataGridViewCellStyle1.Format = "F2";
-            this.Precio.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Precio.HeaderText = "Precio (S/)";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn1
-            // 
-            this.DataGridViewTextBoxColumn1.HeaderText = "Título";
-            this.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1";
-            this.DataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn2
-            // 
-            this.DataGridViewTextBoxColumn2.HeaderText = "Género";
-            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
-            this.DataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn3
-            // 
-            this.DataGridViewTextBoxColumn3.HeaderText = "Año de lanzamiento";
-            this.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3";
-            this.DataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn4
-            // 
-            this.DataGridViewTextBoxColumn4.HeaderText = "Stock";
-            this.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4";
-            this.DataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn5
-            // 
-            dataGridViewCellStyle2.Format = "F2";
-            this.DataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewTextBoxColumn5.HeaderText = "Precio (S/)";
-            this.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5";
-            this.DataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn6
-            // 
-            this.DataGridViewTextBoxColumn6.HeaderText = "Título";
-            this.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6";
-            this.DataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn7
-            // 
-            this.DataGridViewTextBoxColumn7.HeaderText = "Género";
-            this.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7";
-            this.DataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn8
-            // 
-            this.DataGridViewTextBoxColumn8.HeaderText = "Año de lanzamiento";
-            this.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8";
-            this.DataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn9
-            // 
-            this.DataGridViewTextBoxColumn9.HeaderText = "Stock";
-            this.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9";
-            this.DataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // DataGridViewTextBoxColumn10
-            // 
-            dataGridViewCellStyle3.Format = "F2";
-            this.DataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewTextBoxColumn10.HeaderText = "Precio (S/)";
-            this.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10";
-            this.DataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // btnPredeterminados
-            // 
-            this.btnPredeterminados.Location = new System.Drawing.Point(777, 95);
-            this.btnPredeterminados.Name = "btnPredeterminados";
-            this.btnPredeterminados.Size = new System.Drawing.Size(104, 28);
-            this.btnPredeterminados.TabIndex = 13;
-            this.btnPredeterminados.Text = "Datos de ejemplo";
-            this.btnPredeterminados.UseVisualStyleBackColor = true;
-            this.btnPredeterminados.Click += new System.EventHandler(this.btnPredeterminados_Click);
             // 
             // Form1
             // 
