@@ -65,7 +65,7 @@
             this.DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvResultante = new System.Windows.Forms.DataGridView();
             this.DataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,12 +88,14 @@
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnInvierte = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rbAscendente = new System.Windows.Forms.RadioButton();
+            this.rbDescendente = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultante)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -407,23 +409,23 @@
             this.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5";
             this.DataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // dataGridView1
+            // dgvResultante
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvResultante.AllowUserToAddRows = false;
+            this.dgvResultante.AllowUserToResizeColumns = false;
+            this.dgvResultante.AllowUserToResizeRows = false;
+            this.dgvResultante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DataGridViewTextBoxColumn6,
             this.DataGridViewTextBoxColumn7,
             this.DataGridViewTextBoxColumn8,
             this.DataGridViewTextBoxColumn9,
             this.DataGridViewTextBoxColumn10});
-            this.dataGridView1.Location = new System.Drawing.Point(596, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 309);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvResultante.Location = new System.Drawing.Point(596, 19);
+            this.dgvResultante.Name = "dgvResultante";
+            this.dgvResultante.ReadOnly = true;
+            this.dgvResultante.Size = new System.Drawing.Size(553, 357);
+            this.dgvResultante.TabIndex = 3;
             // 
             // DataGridViewTextBoxColumn6
             // 
@@ -481,10 +483,10 @@
             // 
             this.groupBox4.Controls.Add(this.groupBox6);
             this.groupBox4.Controls.Add(this.groupBox5);
-            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.dgvResultante);
             this.groupBox4.Location = new System.Drawing.Point(17, 478);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1161, 342);
+            this.groupBox4.Size = new System.Drawing.Size(1161, 395);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Operaciones";
@@ -542,7 +544,9 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.rbDescendente);
             this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.rbAscendente);
             this.groupBox5.Controls.Add(this.btnContar);
             this.groupBox5.Controls.Add(this.lblConteo);
             this.groupBox5.Controls.Add(this.btnEstadistica);
@@ -551,7 +555,7 @@
             this.groupBox5.Controls.Add(this.btnInvierte);
             this.groupBox5.Location = new System.Drawing.Point(24, 28);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(252, 308);
+            this.groupBox5.Size = new System.Drawing.Size(252, 348);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Por lista";
@@ -569,7 +573,7 @@
             // 
             // btnContar
             // 
-            this.btnContar.Location = new System.Drawing.Point(9, 230);
+            this.btnContar.Location = new System.Drawing.Point(9, 270);
             this.btnContar.Name = "btnContar";
             this.btnContar.Size = new System.Drawing.Size(124, 23);
             this.btnContar.TabIndex = 5;
@@ -581,7 +585,7 @@
             // 
             this.lblConteo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblConteo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConteo.Location = new System.Drawing.Point(8, 256);
+            this.lblConteo.Location = new System.Drawing.Point(8, 296);
             this.lblConteo.Name = "lblConteo";
             this.lblConteo.Size = new System.Drawing.Size(230, 40);
             this.lblConteo.TabIndex = 4;
@@ -589,7 +593,7 @@
             // 
             // btnEstadistica
             // 
-            this.btnEstadistica.Location = new System.Drawing.Point(9, 187);
+            this.btnEstadistica.Location = new System.Drawing.Point(9, 227);
             this.btnEstadistica.Name = "btnEstadistica";
             this.btnEstadistica.Size = new System.Drawing.Size(128, 23);
             this.btnEstadistica.TabIndex = 11;
@@ -604,6 +608,7 @@
             this.btnOrdenarPrecio.TabIndex = 12;
             this.btnOrdenarPrecio.Text = "Ordenar por precio";
             this.btnOrdenarPrecio.UseVisualStyleBackColor = true;
+            this.btnOrdenarPrecio.Click += new System.EventHandler(this.btnOrdenarPrecio_Click);
             // 
             // btnFiltrar
             // 
@@ -631,11 +636,33 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // rbAscendente
+            // 
+            this.rbAscendente.AutoSize = true;
+            this.rbAscendente.Location = new System.Drawing.Point(14, 173);
+            this.rbAscendente.Name = "rbAscendente";
+            this.rbAscendente.Size = new System.Drawing.Size(111, 17);
+            this.rbAscendente.TabIndex = 19;
+            this.rbAscendente.TabStop = true;
+            this.rbAscendente.Text = "Ascendentemente";
+            this.rbAscendente.UseVisualStyleBackColor = true;
+            // 
+            // rbDescendente
+            // 
+            this.rbDescendente.AutoSize = true;
+            this.rbDescendente.Location = new System.Drawing.Point(14, 196);
+            this.rbDescendente.Name = "rbDescendente";
+            this.rbDescendente.Size = new System.Drawing.Size(118, 17);
+            this.rbDescendente.TabIndex = 20;
+            this.rbDescendente.TabStop = true;
+            this.rbDescendente.Text = "Descendentemente";
+            this.rbDescendente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 832);
+            this.ClientSize = new System.Drawing.Size(1189, 885);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label7);
@@ -652,10 +679,11 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultante)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -677,7 +705,7 @@
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.DataGridView dgvLista1;
         private System.Windows.Forms.DataGridView dgvLista2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvResultante;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnAgregarFinal1;
@@ -720,6 +748,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn10;
         private System.Windows.Forms.Button btnPredeterminados;
+        private System.Windows.Forms.RadioButton rbDescendente;
+        private System.Windows.Forms.RadioButton rbAscendente;
     }
 }
 

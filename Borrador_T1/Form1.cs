@@ -116,7 +116,7 @@ namespace Borrador_T1
             // Validación de los espacios "año de lanzamiento", "stock" y "precio"
             string texto1 = txtAñoLanz.Text.Trim().Replace(",", ".");
             bool exito1 = int.TryParse(texto1, out año_de_lanzamiento);
-            if (!exito1 || año_de_lanzamiento <= 0)
+            if (!exito1 || año_de_lanzamiento <= 1900 || año_de_lanzamiento >=2026)
             {
                 MessageBox.Show("Ingrese un año válido",
                     "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -177,6 +177,19 @@ namespace Borrador_T1
                     lblIgualdad.Text = "Las listas son iguales";
                     break;
             }
+        }
+
+        private void btnOrdenarPrecio_Click(object sender, EventArgs e)
+        {
+            ListaVideojuegos listaSeleccionada = comboBox1.Text == "Lista 1" ? lista1 : lista2;
+            if(!rbAscendente.Checked && !rbDescendente.Checked)
+            {
+                MessageBox.Show("Seleccione un tipo de orden");
+                return;
+            }
+            string tipo = rbAscendente.Checked ? "1" : "2";
+            Grupo8.OrdenarPorPrecio(listaSeleccionada, tipo);
+            listaSeleccionada.Imprimir(dgvResultante);
         }
     }
 }
