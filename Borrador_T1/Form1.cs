@@ -191,5 +191,43 @@ namespace Borrador_T1
             Grupo8.OrdenarPorPrecio(listaSeleccionada, tipo);
             listaSeleccionada.Imprimir(dgvResultante);
         }
+
+        private void btnInvierte_Click(object sender, EventArgs e)
+        {
+            ListaVideojuegos listaSeleccionada=null;
+
+            switch (comboBox1.SelectedItem)
+            {
+                case "Lista 1":
+                    listaSeleccionada = lista1;
+                    break;
+                case "Lista 2":
+                    listaSeleccionada = lista2;
+                    break;
+                default:
+                    MessageBox.Show("Seleccione una lista",
+                    "Impedimento del proceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+            }
+
+            if (listaSeleccionada.EstaVacia())
+            {
+                MessageBox.Show("No hay juegos en la lista");
+                return;
+            }
+
+            // Invertir
+            ListaVideojuegos invertida = Grupo8.InvertirLista(listaSeleccionada);
+            invertida.Imprimir(dgvResultante);
+        }
+
+        private void btnRestar_Click(object sender, EventArgs e)
+        {
+            ListaVideojuegos resultado = Grupo8.RestarCatalogos(lista1, lista2);
+
+            resultado.Imprimir(dgvResultante);
+
+            MessageBox.Show("Catálogos restados correctamente");
+        }
     }
 }

@@ -44,9 +44,17 @@ namespace Borrador_T1
         {
 
         }
-        public static void InvertirLista(ListaVideojuegos L) //LO ENTREGA JP
+        public static ListaVideojuegos InvertirLista(ListaVideojuegos L)
         {
+            ListaVideojuegos nueva = new ListaVideojuegos();
+            Nodo actual = L.cabeza;
 
+            while (actual != null)
+            {
+                nueva.AgregarAlInicio(actual.Dato);
+                actual = actual.Siguiente;
+            }
+            return nueva;
         }
         public static void OrdenarPorPrecio(ListaVideojuegos L, string tipo) //LO ENTREGA HANS
         {
@@ -102,9 +110,47 @@ namespace Borrador_T1
         {
 
         }
-        public static void RestarCatalogos(ListaVideojuegos L1, ListaVideojuegos L2) //LO ENTREGA JP
+        public static ListaVideojuegos RestarCatalogos(ListaVideojuegos L1, ListaVideojuegos L2)
         {
+            // Crear una nueva lista donde guardaremos el resultado
+            ListaVideojuegos nueva = new ListaVideojuegos();
 
+            // Puntero para recorrer la lista 1
+            Nodo actual = L1.cabeza;
+
+            // Recorremos toda la lista 1
+            while (actual != null)
+            {
+                // Variable para saber si el elemento existe en la lista 2
+                bool existe = false;
+
+                // Puntero para recorrer la lista 2
+                Nodo actual2 = L2.cabeza;
+
+                // Buscamos si el título de actual está en la lista 2
+                while (actual2 != null)
+                {
+                    // Comparamos los títulos (ignorando mayúsculas/minúsculas)
+                    if (actual.Dato.Titulo.ToLower() == actual2.Dato.Titulo.ToLower())
+                    {
+                        existe = true;
+                        break;
+                    }
+
+                    actual2 = actual2.Siguiente;
+                }
+
+                // Si NO existe en la lista 2, lo agregamos a la nueva lista
+                if (!existe)
+                {
+                    nueva.AgregarAlFinal(actual.Dato);
+                }
+
+                actual = actual.Siguiente;
+            }
+
+            // Retornamos la nueva lista con la resta de catálogos
+            return nueva;
         }
         public static void EstadisticaPrecio(ListaVideojuegos L) //LO ENTREGA FELIX
         {

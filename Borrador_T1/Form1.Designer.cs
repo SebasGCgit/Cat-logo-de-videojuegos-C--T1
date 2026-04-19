@@ -80,7 +80,9 @@
             this.btnRestar = new System.Windows.Forms.Button();
             this.btnIgualdad = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rbDescendente = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rbAscendente = new System.Windows.Forms.RadioButton();
             this.btnContar = new System.Windows.Forms.Button();
             this.lblConteo = new System.Windows.Forms.Label();
             this.btnEstadistica = new System.Windows.Forms.Button();
@@ -88,8 +90,6 @@
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnInvierte = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rbAscendente = new System.Windows.Forms.RadioButton();
-            this.rbDescendente = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -531,6 +531,7 @@
             this.btnRestar.TabIndex = 10;
             this.btnRestar.Text = "Restar catálogos";
             this.btnRestar.UseVisualStyleBackColor = true;
+            this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click);
             // 
             // btnIgualdad
             // 
@@ -560,6 +561,17 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Por lista";
             // 
+            // rbDescendente
+            // 
+            this.rbDescendente.AutoSize = true;
+            this.rbDescendente.Location = new System.Drawing.Point(14, 196);
+            this.rbDescendente.Name = "rbDescendente";
+            this.rbDescendente.Size = new System.Drawing.Size(118, 17);
+            this.rbDescendente.TabIndex = 20;
+            this.rbDescendente.TabStop = true;
+            this.rbDescendente.Text = "Descendentemente";
+            this.rbDescendente.UseVisualStyleBackColor = true;
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -570,6 +582,17 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 14;
+            // 
+            // rbAscendente
+            // 
+            this.rbAscendente.AutoSize = true;
+            this.rbAscendente.Location = new System.Drawing.Point(14, 173);
+            this.rbAscendente.Name = "rbAscendente";
+            this.rbAscendente.Size = new System.Drawing.Size(111, 17);
+            this.rbAscendente.TabIndex = 19;
+            this.rbAscendente.TabStop = true;
+            this.rbAscendente.Text = "Ascendentemente";
+            this.rbAscendente.UseVisualStyleBackColor = true;
             // 
             // btnContar
             // 
@@ -627,6 +650,7 @@
             this.btnInvierte.TabIndex = 8;
             this.btnInvierte.Text = "Invertir lista";
             this.btnInvierte.UseVisualStyleBackColor = true;
+            this.btnInvierte.Click += new System.EventHandler(this.btnInvierte_Click);
             // 
             // pictureBox1
             // 
@@ -635,28 +659,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(250, 200);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // rbAscendente
-            // 
-            this.rbAscendente.AutoSize = true;
-            this.rbAscendente.Location = new System.Drawing.Point(14, 173);
-            this.rbAscendente.Name = "rbAscendente";
-            this.rbAscendente.Size = new System.Drawing.Size(111, 17);
-            this.rbAscendente.TabIndex = 19;
-            this.rbAscendente.TabStop = true;
-            this.rbAscendente.Text = "Ascendentemente";
-            this.rbAscendente.UseVisualStyleBackColor = true;
-            // 
-            // rbDescendente
-            // 
-            this.rbDescendente.AutoSize = true;
-            this.rbDescendente.Location = new System.Drawing.Point(14, 196);
-            this.rbDescendente.Name = "rbDescendente";
-            this.rbDescendente.Size = new System.Drawing.Size(118, 17);
-            this.rbDescendente.TabIndex = 20;
-            this.rbDescendente.TabStop = true;
-            this.rbDescendente.Text = "Descendentemente";
-            this.rbDescendente.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
