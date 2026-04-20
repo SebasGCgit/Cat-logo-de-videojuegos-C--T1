@@ -22,8 +22,7 @@ namespace Borrador_T1
             Stock = stock;
             Precio = precio;
         }
-
-        /*public override string ToString() REVISAR SI ES NECESARIO O NO
+        /*public override string ToString()
         {
             return $"{Titulo} - {Genero} - {AñoDeLanzamiento} - {Stock} Unidades - S/ {Precio:F2}";
         }*/

@@ -1,0 +1,11 @@
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\bin\Debug\Borrador_T1.exe.config
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\bin\Debug\Borrador_T1.exe
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\bin\Debug\Borrador_T1.pdb
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\T1_CatalogoVideojuegos.csproj.AssemblyReference.cache
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\Borrador_T1.exe.config
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\Borrador_T1.Form1.resources
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\Borrador_T1.Properties.Resources.resources
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\T1_CatalogoVideojuegos.csproj.GenerateResource.cache
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\T1_CatalogoVideojuegos.csproj.CoreCompileInputs.cache
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\Borrador_T1.exe
+D:\C#\ACTIVIDADES\CURSO C#\Borrador_T1\Borrador_T1\obj\Debug\Borrador_T1.pdb
