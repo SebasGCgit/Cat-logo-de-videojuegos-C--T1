@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\borrador_t1\\borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\borrador_t1\\borrador_t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Borrador_T1\\Producto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:36.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T20:33:36.915Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Borrador_T1\\Nodo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:17.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T20:33:17.456Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Borrador_T1\\ListaVideojuegos.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwB4AAACLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:32:43.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T20:32:43.196Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Borrador_T1\\Grupo8.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAcwIQAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:08.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T20:33:08.437Z"
             }
           ]
         }
