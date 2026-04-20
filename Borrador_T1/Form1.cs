@@ -94,8 +94,8 @@ namespace Borrador_T1
         private bool ValidarEntradaAtributos(out string titulo, out string genero, out int año_de_lanzamiento, out int stock, out double precio)
         {
             titulo = txtTitulo.Text.Trim();
-            genero = txtGenero.Text.Trim();
             año_de_lanzamiento = 0;
+            genero = "";
             stock = 0;
             precio = 0;
             // Validación de los espacios "título" y "género"
@@ -106,13 +106,15 @@ namespace Borrador_T1
                 txtTitulo.Focus();
                 return false;
             }
-            if (string.IsNullOrEmpty(genero))
+            if (cmbGenero.SelectedIndex == -1) //-1 significa que no selecciono nada
             {
-                MessageBox.Show("El cuadro de género no puede estar vacio.",
+                MessageBox.Show("Seleccione un género",
                     "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTitulo.Focus();
                 return false;
             }
+            genero = cmbGenero.SelectedItem.ToString();
+
             // Validación de los espacios "año de lanzamiento", "stock" y "precio"
             string texto1 = txtAñoLanz.Text.Trim().Replace(",", ".");
             bool exito1 = int.TryParse(texto1, out año_de_lanzamiento);
@@ -146,7 +148,7 @@ namespace Borrador_T1
         private void LimpiarEntradas()
         {
             txtTitulo.Clear();
-            txtGenero.Clear();
+            cmbGenero.SelectedIndex = -1; //Deselecciona el comboBox
             txtAñoLanz.Clear();
             txtStock.Clear();
             txtPrecio.Clear();
@@ -228,6 +230,50 @@ namespace Borrador_T1
             resultado.Imprimir(dgvResultante);
 
             MessageBox.Show("Catálogos restados correctamente");
+        }
+
+        private void btnEstadistica_Click(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedItem)
+            {
+                case "Lista 1":
+                    Grupo8.EstadisticaPrecio(lista1);
+                    break;
+                case "Lista 2":
+                    Grupo8.EstadisticaPrecio(lista2);
+                    break;
+            }
+        }
+
+        private void btnConcatena_Click(object sender, EventArgs e)
+        {
+            ListaVideojuegos resultado = Grupo8.ConcatenarListas(lista1, lista2);
+            if (resultado == null) return;
+            resultado.Imprimir(dgvResultante);
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            string genero = cmbGenero.Text.Trim();
+
+            if (cmbGenero.SelectedIndex == -1) //-1 significa que no selecciono nada
+            {
+                MessageBox.Show("Seleccione un género para filtrar",
+                    "Impedimento del proceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            ListaVideojuegos listaSeleccionada = comboBox1.Text == "Lista 1" ? lista1 : lista2;
+
+            ListaVideojuegos resultado = Grupo8.FiltrarPorGenero(listaSeleccionada, genero);
+
+            if (resultado.EstaVacia())
+            {
+                MessageBox.Show("No se encontraron videojuegos con ese género.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            resultado.Imprimir(dgvResultante);
         }
     }
 }

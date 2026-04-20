@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPredeterminados = new System.Windows.Forms.Button();
@@ -46,7 +46,6 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtAñoLanz = new System.Windows.Forms.TextBox();
-            this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -90,6 +89,7 @@
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnInvierte = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -105,6 +105,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.cmbGenero);
             this.groupBox1.Controls.Add(this.btnPredeterminados);
             this.groupBox1.Controls.Add(this.lblAviso);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -112,7 +113,6 @@
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.txtStock);
             this.groupBox1.Controls.Add(this.txtAñoLanz);
-            this.groupBox1.Controls.Add(this.txtGenero);
             this.groupBox1.Controls.Add(this.txtTitulo);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -121,14 +121,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(894, 210);
+            this.groupBox1.Size = new System.Drawing.Size(813, 210);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del producto";
             // 
             // btnPredeterminados
             // 
-            this.btnPredeterminados.Location = new System.Drawing.Point(777, 95);
+            this.btnPredeterminados.Location = new System.Drawing.Point(693, 93);
             this.btnPredeterminados.Name = "btnPredeterminados";
             this.btnPredeterminados.Size = new System.Drawing.Size(104, 28);
             this.btnPredeterminados.TabIndex = 13;
@@ -139,7 +139,7 @@
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
-            this.lblAviso.Location = new System.Drawing.Point(326, 187);
+            this.lblAviso.Location = new System.Drawing.Point(240, 187);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(252, 13);
             this.lblAviso.TabIndex = 12;
@@ -150,7 +150,7 @@
             this.groupBox3.Controls.Add(this.btnEliminar2);
             this.groupBox3.Controls.Add(this.btnAgregarFinal2);
             this.groupBox3.Controls.Add(this.btnAgregarInicio2);
-            this.groupBox3.Location = new System.Drawing.Point(560, 31);
+            this.groupBox3.Location = new System.Drawing.Point(474, 31);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(200, 149);
             this.groupBox3.TabIndex = 11;
@@ -192,7 +192,7 @@
             this.groupBox2.Controls.Add(this.btnEliminar1);
             this.groupBox2.Controls.Add(this.btnAgregarFinal1);
             this.groupBox2.Controls.Add(this.btnAgregarInicio1);
-            this.groupBox2.Location = new System.Drawing.Point(327, 31);
+            this.groupBox2.Location = new System.Drawing.Point(241, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 149);
             this.groupBox2.TabIndex = 10;
@@ -231,43 +231,36 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(177, 160);
+            this.txtPrecio.Location = new System.Drawing.Point(142, 160);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(82, 20);
             this.txtPrecio.TabIndex = 9;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(177, 102);
+            this.txtStock.Location = new System.Drawing.Point(142, 102);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(100, 20);
+            this.txtStock.Size = new System.Drawing.Size(82, 20);
             this.txtStock.TabIndex = 8;
             // 
             // txtAñoLanz
             // 
             this.txtAñoLanz.Location = new System.Drawing.Point(27, 160);
             this.txtAñoLanz.Name = "txtAñoLanz";
-            this.txtAñoLanz.Size = new System.Drawing.Size(116, 20);
+            this.txtAñoLanz.Size = new System.Drawing.Size(97, 20);
             this.txtAñoLanz.TabIndex = 7;
-            // 
-            // txtGenero
-            // 
-            this.txtGenero.Location = new System.Drawing.Point(27, 101);
-            this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(116, 20);
-            this.txtGenero.TabIndex = 6;
             // 
             // txtTitulo
             // 
             this.txtTitulo.Location = new System.Drawing.Point(27, 47);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(250, 20);
+            this.txtTitulo.Size = new System.Drawing.Size(176, 20);
             this.txtTitulo.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(174, 144);
+            this.label5.Location = new System.Drawing.Point(139, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 4;
@@ -276,7 +269,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(174, 86);
+            this.label4.Location = new System.Drawing.Point(139, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 13);
             this.label4.TabIndex = 3;
@@ -353,8 +346,8 @@
             // 
             // Precio
             // 
-            dataGridViewCellStyle1.Format = "F2";
-            this.Precio.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Format = "F2";
+            this.Precio.DefaultCellStyle = dataGridViewCellStyle4;
             this.Precio.HeaderText = "Precio (S/)";
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
@@ -403,8 +396,8 @@
             // 
             // DataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle2.Format = "F2";
-            this.DataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Format = "F2";
+            this.DataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridViewTextBoxColumn5.HeaderText = "Precio (S/)";
             this.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5";
             this.DataGridViewTextBoxColumn5.ReadOnly = true;
@@ -453,8 +446,8 @@
             // 
             // DataGridViewTextBoxColumn10
             // 
-            dataGridViewCellStyle3.Format = "F2";
-            this.DataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Format = "F2";
+            this.DataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridViewTextBoxColumn10.HeaderText = "Precio (S/)";
             this.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10";
             this.DataGridViewTextBoxColumn10.ReadOnly = true;
@@ -522,6 +515,7 @@
             this.btnConcatena.TabIndex = 7;
             this.btnConcatena.Text = "Concatenar listas";
             this.btnConcatena.UseVisualStyleBackColor = true;
+            this.btnConcatena.Click += new System.EventHandler(this.btnConcatena_Click);
             // 
             // btnRestar
             // 
@@ -622,6 +616,7 @@
             this.btnEstadistica.TabIndex = 11;
             this.btnEstadistica.Text = "Estadísticas por precio";
             this.btnEstadistica.UseVisualStyleBackColor = true;
+            this.btnEstadistica.Click += new System.EventHandler(this.btnEstadistica_Click);
             // 
             // btnOrdenarPrecio
             // 
@@ -641,6 +636,7 @@
             this.btnFiltrar.TabIndex = 9;
             this.btnFiltrar.Text = "Filtrar por género";
             this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // btnInvierte
             // 
@@ -654,11 +650,36 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(916, 26);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(846, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(331, 210);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // cmbGenero
+            // 
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Acción",
+            "Aventura",
+            "Rol (RPG)",
+            "Estrategia",
+            "Simulación",
+            "Deportes",
+            "Carreras",
+            "Disparos (Shooter)",
+            "Plataformas",
+            "Lucha (Fighting)",
+            "Terror (Horror)",
+            "Puzzle (Lógica)",
+            "Musical / Ritmo",
+            "Social / Party"});
+            this.cmbGenero.Location = new System.Drawing.Point(27, 102);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(97, 21);
+            this.cmbGenero.TabIndex = 14;
             // 
             // Form1
             // 
@@ -703,7 +724,6 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.TextBox txtAñoLanz;
-        private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.DataGridView dgvLista1;
         private System.Windows.Forms.DataGridView dgvLista2;
@@ -752,6 +772,7 @@
         private System.Windows.Forms.Button btnPredeterminados;
         private System.Windows.Forms.RadioButton rbDescendente;
         private System.Windows.Forms.RadioButton rbAscendente;
+        private System.Windows.Forms.ComboBox cmbGenero;
     }
 }
 

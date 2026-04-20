@@ -19,16 +19,16 @@ namespace Borrador_T1
         public ListaVideojuegos(int cantidadVideojuegos)
         {
             cabeza = null;
-            if (cantidadVideojuegos >= 1) { AgregarAlFinal(new Producto("God of War Ragnarök", "Acción / Aventura", 2022, 36, 190.0)); }
-            if (cantidadVideojuegos >= 2) { AgregarAlFinal(new Producto("Red Dead Redemption 2", "Western / Acción", 2018, 57, 100.0)); }
+            if (cantidadVideojuegos >= 1) { AgregarAlFinal(new Producto("God of War Ragnarök", "Acción", 2022, 36, 190.0)); }
+            if (cantidadVideojuegos >= 2) { AgregarAlFinal(new Producto("Red Dead Redemption 2", "Aventura", 2018, 57, 100.0)); }
             if (cantidadVideojuegos >= 3) { AgregarAlFinal(new Producto("Super Mario Bros. Wonder", "Plataformas", 2023, 120, 185.0)); }
-            if (cantidadVideojuegos >= 4) { AgregarAlFinal(new Producto("The Legend of Zelda: TotK", "Aventura / Mundo Abierto", 2023, 50, 215.0)); }
-            if (cantidadVideojuegos >= 5) { AgregarAlFinal(new Producto("Cyberpunk 2077", "Acción / Sci-Fi", 2020, 101, 130.0)); }
-            if (cantidadVideojuegos >= 6) { AgregarAlFinal(new Producto("Street Fighter 6", "Lucha", 2023, 150, 160.0)); }
-            if (cantidadVideojuegos >= 7) { AgregarAlFinal(new Producto("Forza Horizon 5", "Carreras / Simulación", 2021, 20, 160.0)); }
-            if (cantidadVideojuegos >= 8) { AgregarAlFinal(new Producto("Helldivers 2", "Shooter Cooperativo", 2024, 10, 160.0)); }
-            if (cantidadVideojuegos >= 9) { AgregarAlFinal(new Producto("Hollow Knight", "Metroidvania / Indie", 2017, 190, 50.0)); }
-            if (cantidadVideojuegos >= 10) { AgregarAlFinal(new Producto("Silent Hill 2 (Remake)", "Survival Horror", 2024, 132, 250.0)); }
+            if (cantidadVideojuegos >= 4) { AgregarAlFinal(new Producto("The Legend of Zelda: TotK", "Aventura", 2023, 50, 215.0)); }
+            if (cantidadVideojuegos >= 5) { AgregarAlFinal(new Producto("Cyberpunk 2077", "Rol (RPG)", 2020, 101, 130.0)); }
+            if (cantidadVideojuegos >= 6) { AgregarAlFinal(new Producto("Street Fighter 6", "Lucha (Fighting)", 2023, 150, 160.0)); }
+            if (cantidadVideojuegos >= 7) { AgregarAlFinal(new Producto("Forza Horizon 5", "Carreras", 2021, 20, 160.0)); }
+            if (cantidadVideojuegos >= 8) { AgregarAlFinal(new Producto("Helldivers 2", "Disparos (Shooter)", 2024, 10, 160.0)); }
+            if (cantidadVideojuegos >= 9) { AgregarAlFinal(new Producto("Hollow Knight", "Plataformas", 2017, 190, 50.0)); }
+            if (cantidadVideojuegos >= 10) { AgregarAlFinal(new Producto("Silent Hill 2 (Remake)", "Terror (Horror)", 2024, 132, 250.0)); }
         }
         public void AgregarAlInicio(Producto dato)
         {

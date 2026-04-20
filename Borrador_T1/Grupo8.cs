@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Borrador_T1
 {
@@ -40,9 +42,31 @@ namespace Borrador_T1
             }
             return true;
         }
-        public static void ConcatenarListas(ListaVideojuegos L1, ListaVideojuegos L2) //LO ENTREGA ADRIAN
+        public static ListaVideojuegos ConcatenarListas(ListaVideojuegos L1, ListaVideojuegos L2)
         {
+            if (L1.cabeza == null || L2.cabeza == null)
+            {
+                MessageBox.Show("Lista 1 o 2 vacía",
+                    "Impedimento del proceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
 
+            ListaVideojuegos nueva = new ListaVideojuegos();
+            Nodo actual1 = L1.cabeza;
+            while (actual1 != null)
+            {
+                nueva.AgregarAlFinal(actual1.Dato);
+                actual1 = actual1.Siguiente;
+            }
+
+            Nodo actual2 = L2.cabeza;
+            while (actual2 != null)
+            {
+                nueva.AgregarAlFinal(actual2.Dato);
+                actual2 = actual2.Siguiente;
+            }
+
+            return nueva;
         }
         public static ListaVideojuegos InvertirLista(ListaVideojuegos L)
         {
@@ -56,7 +80,7 @@ namespace Borrador_T1
             }
             return nueva;
         }
-        public static void OrdenarPorPrecio(ListaVideojuegos L, string tipo) //LO ENTREGA HANS
+        public static void OrdenarPorPrecio(ListaVideojuegos L, string tipo)
         {
             switch(tipo)
             {
@@ -106,9 +130,19 @@ namespace Borrador_T1
                     break;
             }
         }
-        public static void FiltrarPorGenero(ListaVideojuegos L, string genero) //LO ENTREGA ADRIAN
+        public static ListaVideojuegos FiltrarPorGenero(ListaVideojuegos L, string genero)
         {
+            ListaVideojuegos nueva = new ListaVideojuegos();
 
+            Nodo actual = L.cabeza;
+            while (actual != null)
+            {
+                if (actual.Dato.Genero.ToLower().Contains(genero.ToLower()))
+                    nueva.AgregarAlFinal(actual.Dato);
+                actual = actual.Siguiente;
+            }
+
+            return nueva;
         }
         public static ListaVideojuegos RestarCatalogos(ListaVideojuegos L1, ListaVideojuegos L2)
         {
@@ -152,9 +186,42 @@ namespace Borrador_T1
             // Retornamos la nueva lista con la resta de catálogos
             return nueva;
         }
-        public static void EstadisticaPrecio(ListaVideojuegos L) //LO ENTREGA FELIX
+        public static void EstadisticaPrecio(ListaVideojuegos L)
         {
+            if (L.cabeza == null)
+            {
+                MessageBox.Show("Lista vacía",
+                    "Impedimento del proceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            Nodo actual = L.cabeza;
+
+            double min = actual.Dato.Precio;
+            double max = actual.Dato.Precio;
+            double suma = 0;
+            double contador = 0;
+
+            while (actual != null)
+            {
+                double precio = actual.Dato.Precio;
+
+                if (precio < min) min = precio;
+                if (precio > max) max = precio;
+
+                suma += precio;
+                contador++;
+
+                actual = actual.Siguiente;
+            }
+
+            double promedio = (double)suma / contador;
+
+            MessageBox.Show(
+                "Precio mínimo: " + min +
+                "\nPrecio máximo: " + max +
+                "\nPromedio: " + promedio,
+                "Estadísticas:", MessageBoxButtons.OK);
         }
     }
 }
