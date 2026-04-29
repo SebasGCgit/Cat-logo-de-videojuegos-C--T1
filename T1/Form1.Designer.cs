@@ -1,4 +1,4 @@
-﻿namespace Borrador_T1
+﻿namespace T1
 {
     partial class Form1
     {

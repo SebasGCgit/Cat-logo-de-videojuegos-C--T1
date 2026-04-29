@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Borrador_T1
+namespace T1
 {
     public partial class Form1 : Form
     {
@@ -148,7 +148,7 @@ namespace Borrador_T1
         private void LimpiarEntradas()
         {
             txtTitulo.Clear();
-            cmbGenero.SelectedIndex = -1; //Deselecciona el comboBox
+            cmbGenero.SelectedIndex = -1;
             txtAñoLanz.Clear();
             txtStock.Clear();
             txtPrecio.Clear();
@@ -256,7 +256,7 @@ namespace Borrador_T1
         {
             string genero = cmbGenero.Text.Trim();
 
-            if (cmbGenero.SelectedIndex == -1) //-1 significa que no selecciono nada
+            if (cmbGenero.SelectedIndex == -1)
             {
                 MessageBox.Show("Seleccione un género para filtrar",
                     "Impedimento del proceso", MessageBoxButtons.OK, MessageBoxIcon.Warning);

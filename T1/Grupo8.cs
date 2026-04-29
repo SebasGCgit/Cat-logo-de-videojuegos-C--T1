@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Borrador_T1
+namespace T1
 {
     internal static class Grupo8
     {
+        //Cuenta la cantidad de videojuegos de la lista seleccionada
         public static int ContarVideojuegos(ListaVideojuegos L)
         {
             int conteo = 0;
@@ -21,6 +22,7 @@ namespace Borrador_T1
             }
             return conteo;
         }
+        //Compara las dos listas y verifica si son exactamente iguales
         public static bool SonIguales(ListaVideojuegos L1, ListaVideojuegos L2)
         {
             Nodo actual1 = L1.cabeza;
@@ -42,6 +44,7 @@ namespace Borrador_T1
             }
             return true;
         }
+        //Concatena el ultimo nodo de L1 con el primer nodo de L2 dando una nueva lista
         public static ListaVideojuegos ConcatenarListas(ListaVideojuegos L1, ListaVideojuegos L2)
         {
             if (L1.cabeza == null || L2.cabeza == null)
@@ -68,6 +71,7 @@ namespace Borrador_T1
 
             return nueva;
         }
+        //Invierte el orden de los elementos de la lista seleccionada
         public static ListaVideojuegos InvertirLista(ListaVideojuegos L)
         {
             ListaVideojuegos nueva = new ListaVideojuegos();
@@ -80,12 +84,13 @@ namespace Borrador_T1
             }
             return nueva;
         }
+        //Ordena (en forma ascendente o descendente) la lista de acuerdo al precio
         public static void OrdenarPorPrecio(ListaVideojuegos L, string tipo)
         {
             switch(tipo)
             {
                 case "1":
-                    if (L.cabeza == null) return;  // Lista vacia: nada que ordenar
+                    if (L.cabeza == null) return;
                     bool hayIntercambio1;
                     do
                     {
@@ -94,10 +99,8 @@ namespace Borrador_T1
 
                         while (actual.Siguiente != null)
                         {
-                            // Si el nodo actual tiene mayor precio que el siguiente: intercambiar
                             if (actual.Dato.Precio > actual.Siguiente.Dato.Precio)
                             {
-                                // Swap: se intercambia el Dato, no los punteros
                                 Producto temp = actual.Dato;
                                 actual.Dato = actual.Siguiente.Dato;
                                 actual.Siguiente.Dato = temp;
@@ -105,7 +108,7 @@ namespace Borrador_T1
                             }
                             actual = actual.Siguiente;
                         }
-                    } while (hayIntercambio1);  // Repite hasta que no haya intercambios
+                    } while (hayIntercambio1);
                     break;
                 case "2":
                     if (L.cabeza == null) return;
@@ -130,6 +133,7 @@ namespace Borrador_T1
                     break;
             }
         }
+        //Filtra los videojuegos de la lista seleccionada según el genéro elegido
         public static ListaVideojuegos FiltrarPorGenero(ListaVideojuegos L, string genero)
         {
             ListaVideojuegos nueva = new ListaVideojuegos();
@@ -144,48 +148,38 @@ namespace Borrador_T1
 
             return nueva;
         }
+        //Retorna una nueva lista con los videojuegos de L1 cuyo título no aparezca en L2
         public static ListaVideojuegos RestarCatalogos(ListaVideojuegos L1, ListaVideojuegos L2)
         {
-            // Crear una nueva lista donde guardaremos el resultado
             ListaVideojuegos nueva = new ListaVideojuegos();
 
-            // Puntero para recorrer la lista 1
             Nodo actual = L1.cabeza;
 
-            // Recorremos toda la lista 1
             while (actual != null)
             {
-                // Variable para saber si el elemento existe en la lista 2
                 bool existe = false;
 
-                // Puntero para recorrer la lista 2
                 Nodo actual2 = L2.cabeza;
 
-                // Buscamos si el título de actual está en la lista 2
                 while (actual2 != null)
                 {
-                    // Comparamos los títulos (ignorando mayúsculas/minúsculas)
                     if (actual.Dato.Titulo.ToLower() == actual2.Dato.Titulo.ToLower())
                     {
                         existe = true;
                         break;
                     }
-
                     actual2 = actual2.Siguiente;
                 }
 
-                // Si NO existe en la lista 2, lo agregamos a la nueva lista
                 if (!existe)
                 {
                     nueva.AgregarAlFinal(actual.Dato);
                 }
-
                 actual = actual.Siguiente;
             }
-
-            // Retornamos la nueva lista con la resta de catálogos
             return nueva;
         }
+        //Calcula y muestra en consola: precio mínimo, precio máximo y promedio de precios de todos los videojuegos de la lista seleccionada
         public static void EstadisticaPrecio(ListaVideojuegos L)
         {
             if (L.cabeza == null)

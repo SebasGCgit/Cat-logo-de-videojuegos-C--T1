@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\",
+  "WorkspaceRootPath": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\borrador_t1\\borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\grupo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\grupo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\grupo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\grupo8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\listavideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\listavideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\listavideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\listavideojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|Borrador_T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:borrador_t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|d:\\c#\\actividades\\curso c#\\t1\\t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}|T1\\T1_CatalogoVideojuegos.csproj|solutionrelative:t1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,76 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Form1.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\Form1.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Form1.cs*",
-              "RelativeToolTip": "Borrador_T1\\Form1.cs*",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAtwAkBAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Form1.cs",
+              "RelativeDocumentMoniker": "T1\\Form1.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Form1.cs",
+              "RelativeToolTip": "T1\\Form1.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAYwAEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T02:49:02.296Z",
+              "WhenOpened": "2026-04-28T22:39:57.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Form1.cs",
+              "RelativeDocumentMoniker": "T1\\Form1.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "T1\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:39:15.222Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Producto.cs",
+              "RelativeDocumentMoniker": "T1\\Producto.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Producto.cs",
+              "RelativeToolTip": "T1\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:39:33.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Nodo.cs",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Nodo.cs",
+              "RelativeDocumentMoniker": "T1\\Nodo.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Nodo.cs",
+              "RelativeToolTip": "T1\\Nodo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:39:32.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListaVideojuegos.cs",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\ListaVideojuegos.cs",
+              "RelativeDocumentMoniker": "T1\\ListaVideojuegos.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\ListaVideojuegos.cs",
+              "RelativeToolTip": "T1\\ListaVideojuegos.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwGwAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:39:27.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Form1.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\Form1.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Borrador_T1\\Form1.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T17:02:41.207Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Producto.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\Producto.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Producto.cs",
-              "RelativeToolTip": "Borrador_T1\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:36.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Nodo.cs",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Nodo.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\Nodo.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Nodo.cs",
-              "RelativeToolTip": "Borrador_T1\\Nodo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:17.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListaVideojuegos.cs",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\ListaVideojuegos.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\ListaVideojuegos.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\ListaVideojuegos.cs",
-              "RelativeToolTip": "Borrador_T1\\ListaVideojuegos.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwB4AAACLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:32:43.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Grupo8.cs",
-              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Grupo8.cs",
-              "RelativeDocumentMoniker": "Borrador_T1\\Grupo8.cs",
-              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\Borrador_T1\\Borrador_T1\\Grupo8.cs",
-              "RelativeToolTip": "Borrador_T1\\Grupo8.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAcwIQAAABaAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Grupo8.cs",
+              "RelativeDocumentMoniker": "T1\\Grupo8.cs",
+              "ToolTip": "D:\\C#\\ACTIVIDADES\\CURSO C#\\T1\\T1\\Grupo8.cs",
+              "RelativeToolTip": "T1\\Grupo8.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T20:33:08.437Z"
+              "WhenOpened": "2026-04-28T22:39:06.013Z",
+              "EditorCaption": ""
             }
           ]
         }

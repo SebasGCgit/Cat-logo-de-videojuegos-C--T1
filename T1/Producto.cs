@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Borrador_T1
+namespace T1
 {
     internal class Producto
     {
@@ -22,9 +22,5 @@ namespace Borrador_T1
             Stock = stock;
             Precio = precio;
         }
-        /*public override string ToString()
-        {
-            return $"{Titulo} - {Genero} - {AñoDeLanzamiento} - {Stock} Unidades - S/ {Precio:F2}";
-        }*/
     }
 }
