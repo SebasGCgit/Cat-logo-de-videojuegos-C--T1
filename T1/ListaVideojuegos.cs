@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Borrador_T1
+namespace T1
 {
     internal class ListaVideojuegos
     {
@@ -30,24 +30,26 @@ namespace Borrador_T1
             if (cantidadVideojuegos >= 9) { AgregarAlFinal(new Producto("Hollow Knight", "Plataformas", 2017, 190, 50.0)); }
             if (cantidadVideojuegos >= 10) { AgregarAlFinal(new Producto("Silent Hill 2 (Remake)", "Terror (Horror)", 2024, 132, 250.0)); }
         }
+        //Agrega un videojuego al inicio de la lista
         public void AgregarAlInicio(Producto dato)
         {
             Nodo nuevoNodo = new Nodo(dato);
             if (EstaVacia())
             {
                 cabeza = nuevoNodo;
-                return; // Termina
+                return;
             }
             nuevoNodo.Siguiente = cabeza;
             cabeza = nuevoNodo;
         }
+        //Agrega un videojuego al final de la lista
         public void AgregarAlFinal(Producto dato)
         {
             Nodo nuevoNodo = new Nodo(dato);
             if (EstaVacia())
             {
                 cabeza = nuevoNodo;
-                return; // Termina
+                return;
             }
             Nodo actual = cabeza;
             while (actual.Siguiente != null)
@@ -56,22 +58,20 @@ namespace Borrador_T1
             }
             actual.Siguiente = nuevoNodo;
         }
+        //Elimina un  videojuego de la lista según su título
         public void EliminarPorTitulo(string titulo)
         {
-            //1º caso
             if (EstaVacia())
             {
                 MessageBox.Show("La lista está vacía.",
                     "Proceso no completado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            //2º caso
             if (cabeza.Dato.Titulo == titulo)
             {
                 cabeza = cabeza.Siguiente;
                 return;
             }
-            //3º caso
             Nodo anterior = cabeza;
             Nodo actual = cabeza.Siguiente;
             while (actual != null)
@@ -87,10 +87,10 @@ namespace Borrador_T1
             MessageBox.Show("Título no encontrado en la lista.",
                     "Proceso no completado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
-        //Recorre la lista y llena el DataGridView
+        //Muestra los videojuegos de la lista en un DataGridView
         public void Imprimir(DataGridView dgv)
         {
-            dgv.Rows.Clear(); //Limpia filas del dgv
+            dgv.Rows.Clear();
             Nodo actual = cabeza;
             while (actual != null)
             {
@@ -101,18 +101,18 @@ namespace Borrador_T1
                              actual.Dato.Precio);
                 actual = actual.Siguiente;
             }
-        }
+        }//Verifica si la lista esta vacía
         public bool EstaVacia()
         {
             return cabeza == null;
         }
-        //Evita que se duplique el mismo titulo en la lista
+        //Verifica si el nuevo título registrado se encuentra en alguna de las dos listas y evita duplicarlo
         public bool Duplicado(string titulo)
         {
             Nodo actual = cabeza;
             while (actual != null)
             {
-                if (actual.Dato.Titulo.ToLower() == titulo.ToLower()) return true; //valida si el titulo existe convirtiendo a minúscula todo el texto.
+                if (actual.Dato.Titulo.ToLower() == titulo.ToLower()) return true;
                 actual = actual.Siguiente;
             }
             return false;

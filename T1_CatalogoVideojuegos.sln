@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1_CatalogoVideojuegos", "Borrador_T1\T1_CatalogoVideojuegos.csproj", "{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1_CatalogoVideojuegos", "T1\T1_CatalogoVideojuegos.csproj", "{0B3B7E0B-4B27-4528-B22A-5F431E4EB7A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

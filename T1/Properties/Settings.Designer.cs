@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Borrador_T1.Properties
+namespace T1.Properties
 {
 
 
